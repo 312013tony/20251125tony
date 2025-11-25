@@ -10,8 +10,8 @@ void setup() { // 初始化函式：開機或重置時執行一次
 
 void loop() { // 主迴圈：重複執行
 	digitalWrite(LED_PIN, HIGH); // 將 LED 設為高電位（點亮）
-	delay(BLINK_DELAY); // 等待指定毫秒數
+	delay(500); 
 	digitalWrite(LED_PIN, LOW); // 將 LED 設為低電位（熄滅）
-	delay(BLINK_DELAY); // 再等待指定毫秒數
+	delay(500); 
 } // loop 結束
 
