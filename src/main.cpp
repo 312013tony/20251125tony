@@ -1,18 +1,17 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+// LED pin and blink interval (ms)
+const uint8_t LED_PIN = 22;
+const unsigned long BLINK_DELAY = 500;
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+	pinMode(LED_PIN, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+	digitalWrite(LED_PIN, HIGH);
+	delay(BLINK_DELAY);
+	digitalWrite(LED_PIN, LOW);
+	delay(BLINK_DELAY);
 }
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
-}
